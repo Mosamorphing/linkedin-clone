@@ -1,9 +1,18 @@
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+import Loginn from "./components/Loginn";
+
 
 function App() {
   return (
     <div className="App">
-      <h2> Building a LinkedIn Clone</h2>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+          <Loginn />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
